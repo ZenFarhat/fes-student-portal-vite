@@ -23,7 +23,7 @@ const SidePanel = () => {
   if (!component) return null
 
   return (
-    <div className="w-3/6 fixed top-0 right-0 bg-white h-screen shadow-2xl rounded-xl p-4" ref={ref}>
+    <div className="w-5/6 lg:w-3/6 fixed top-0 right-0 bg-white h-screen shadow-2xl rounded-xl p-4 overflow-y-auto" ref={ref}>
       <h1 className="text-4xl mb-4">{header}</h1>
       {component}
     </div>
