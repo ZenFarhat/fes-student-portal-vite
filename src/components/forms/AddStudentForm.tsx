@@ -64,7 +64,6 @@ const AddStudentForm = () => {
           return { value: item, label: item }
         })}
       />
-      <FormTextField label="Progress" placeholder="Progress" id="progress" error={errors.progress?.message} />
       <FormDateField label="Next Check-in" placeholder="Next Check-in" id="nextCheckin" error={errors.nextCheckin?.message} {...register("nextCheckin")} />
       <FormTextareaField label="Notes" placeholder="Notes" id="notes" error={errors.notes?.message} {...register("notes")} />
       <button type="submit" className="bg-blue-500 text-white p-2 rounded">
