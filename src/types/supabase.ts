@@ -12,30 +12,33 @@ export type Database = {
       students: {
         Row: {
           created_at: string
+          email: string
           firstName: string
           id: string
           lastName: string
-          nextCheckin: string
+          nextCheckin: string | null
           notes: string
           onboardDate: string
           progress: string
         }
         Insert: {
           created_at?: string
+          email?: string
           firstName?: string
           id?: string
           lastName?: string
-          nextCheckin?: string
+          nextCheckin?: string | null
           notes?: string
           onboardDate?: string
           progress?: string
         }
         Update: {
           created_at?: string
+          email?: string
           firstName?: string
           id?: string
           lastName?: string
-          nextCheckin?: string
+          nextCheckin?: string | null
           notes?: string
           onboardDate?: string
           progress?: string

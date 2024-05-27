@@ -21,7 +21,7 @@ const studentSchema = z.object({
   email: z.string().email("Invalid email address").min(1, "Email is required"),
   onboardDate: z.string().min(1, "Onboard date is required"),
   progress: z.string().min(1, "Progress is required"),
-  nextCheckin: z.string().min(1, "Next check-in date is required"),
+  nextCheckin: z.string(),
   notes: z.string().optional(),
 })
 
@@ -44,7 +44,7 @@ const EditStudentForm: React.FC<Props> = ({ student }) => {
       email: student.email,
       onboardDate: student.onboardDate,
       progress: student.progress,
-      nextCheckin: student.nextCheckin,
+      nextCheckin: student.nextCheckin ? student.nextCheckin : undefined,
       notes: student.notes,
     },
   })

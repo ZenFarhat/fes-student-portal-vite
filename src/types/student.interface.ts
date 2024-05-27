@@ -4,7 +4,7 @@ export interface IStudentProfile {
   lastName?: string
   onboardDate?: string
   progress?: string
-  nextCheckin?: string
+  nextCheckin?: string | null
   notes?: string
   email?: string
 }
