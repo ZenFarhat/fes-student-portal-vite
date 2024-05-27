@@ -1,0 +1,1 @@
+export const PROGRESS = ["Just Onboarded", "Introduction", "Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Interviews", "Virtual Internship", "NextJS", "TypeScript", "Redux", "Clones", "Data Structures & Algorithms", "Advanced Internship", "Job Application", "Ready For Careers Session", "Applying for jobs"]
